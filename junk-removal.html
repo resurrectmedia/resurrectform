@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1307712794563872');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1307712794563872&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- GHL form submission listener -->
+<script>
+window.addEventListener('message', function(e) {
+  if (e.data && typeof e.data === 'object') {
+    var t = String(e.data.type || e.data.event || '').toLowerCase();
+    if (t.includes('form') && (t.includes('submit') || t.includes('submitted'))) {
+      fbq('trackCustom', 'Submit application');
+    }
+  }
+});
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Resurrect Media — Meta ads & automation built for junk removal companies. 10 qualified leads in 30 days or next month is free.">
+  <title>Resurrect Media — Junk Removal Ads That Book Real Jobs</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:           #0a0a0a;
+      --surface:      #101010;
+      --surface-2:    #141414;
+      --border:       rgba(255,255,255,0.07);
+      --border-2:     rgba(255,255,255,0.04);
+      --accent:       #4A9EFF;
+      --accent-dim:   rgba(74,158,255,0.10);
+      --accent-glow:  rgba(74,158,255,0.22);
+      --accent-line:  rgba(74,158,255,0.30);
+      --text:         #FFFFFF;
+      --text-2:       #B0B0B0;
+      --text-3:       #555555;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.038;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 200px 200px;
+    }
+    h1, h2, h3, .syne { font-family: 'Syne', sans-serif; }
+    .section-title {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: clamp(1.75rem, 4vw, 2.6rem);
+      letter-spacing: -0.025em;
+      line-height: 1.15;
+      color: var(--text);
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 18px;
+    }
+    .eyebrow::before {
+      content: '+';
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .container       { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+    .container--mid  { max-width: 840px;  margin: 0 auto; padding: 0 24px; }
+    .container--slim { max-width: 680px;  margin: 0 auto; padding: 0 24px; }
+    section { position: relative; padding: 100px 0; }
+    @media (max-width: 768px) { section { padding: 72px 0; } }
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition:
+        opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.visible              { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1              { transition-delay: 0.12s; }
+    .reveal-delay-2              { transition-delay: 0.24s; }
+    .reveal-delay-3              { transition-delay: 0.36s; }
+    .reveal-delay-4              { transition-delay: 0.48s; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent);
+      color: #fff;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.015em;
+      padding: 15px 34px;
+      border-radius: 8px;
+      border: none;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 0.22s ease, box-shadow 0.22s ease;
+      position: relative;
+    }
+    .btn:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 8px 32px var(--accent-glow), 0 0 0 1px rgba(74,158,255,0.35);
+    }
+    .btn:active { transform: scale(0.98); }
+    .btn--lg    { font-size: 1.05rem; padding: 18px 42px; }
+    #hero {
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 24px 80px;
+      overflow: hidden;
+    }
+    #hero::before {
+      content: '';
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: min(800px, 120vw);
+      height: min(500px, 80vw);
+      background: radial-gradient(ellipse, rgba(74,158,255,0.13) 0%, transparent 68%);
+      pointer-events: none;
+    }
+    .hero__badge {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      background: var(--accent-dim);
+      border: 1px solid var(--accent-line);
+      color: var(--accent);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 9px 20px;
+      border-radius: 100px;
+      margin-bottom: 40px;
+    }
+    .hero__badge::before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      background: var(--accent);
+      border-radius: 50%;
+      animation: blink 2.2s ease-in-out infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.35; }
+    }
+    .hero__headline {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: clamp(2.5rem, 7vw, 5rem);
+      line-height: 1.06;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      max-width: 860px;
+      position: relative;
+      margin-bottom: 28px;
+    }
+    .hero__headline .accent { color: var(--accent); }
+    .hero__sub {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      color: var(--text-2);
+      max-width: 520px;
+      margin: 0 auto 52px;
+      line-height: 1.75;
+      position: relative;
+    }
+    .hero__cta { position: relative; }
+    .hero-in {
+      opacity: 0;
+      transform: translateY(18px);
+      animation: heroFade 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    .hero-in:nth-child(1) { animation-delay: 0.05s; }
+    .hero-in:nth-child(2) { animation-delay: 0.22s; }
+    .hero-in:nth-child(3) { animation-delay: 0.38s; }
+    .hero-in:nth-child(4) { animation-delay: 0.52s; }
+    @keyframes heroFade {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    #vsl {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .vsl__label {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 1.35rem;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .vsl__wrap {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow:
+        0 0 0 1px var(--border),
+        0 32px 80px rgba(0,0,0,0.55),
+        0 0 60px rgba(74,158,255,0.06);
+    }
+    .vsl__ratio {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+    }
+    .vsl__ratio iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+    }
+    .vsl__cta { text-align: center; margin-top: 40px; }
+    #offer { padding: 80px 0; }
+    .offer__box {
+      max-width: 860px;
+      margin: 0 auto;
+      background: linear-gradient(135deg, rgba(74,158,255,0.09) 0%, rgba(74,158,255,0.03) 100%);
+      border: 1px solid var(--accent-line);
+      border-radius: 22px;
+      padding: 72px 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .offer__box::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 50%;
+      transform: translateX(-50%);
+      width: 55%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    }
+    .offer__box::after {
+      content: '+';
+      position: absolute;
+      top: 22px; right: 28px;
+      font-family: 'Syne', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--accent);
+      opacity: 0.35;
+    }
+    .offer__box .offer__glow {
+      position: absolute;
+      bottom: -60px; right: -60px;
+      width: 280px; height: 280px;
+      background: radial-gradient(circle, rgba(74,158,255,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .offer__headline {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: clamp(1.8rem, 4.5vw, 3rem);
+      line-height: 1.13;
+      letter-spacing: -0.025em;
+      color: var(--text);
+      margin-bottom: 24px;
+      position: relative;
+    }
+    .offer__sub {
+      font-size: 1.05rem;
+      color: var(--text-2);
+      font-weight: 300;
+      max-width: 560px;
+      margin: 0 auto;
+      line-height: 1.75;
+      position: relative;
+    }
+    @media (max-width: 600px) {
+      .offer__box { padding: 44px 24px; }
+    }
+    #problem {
+      border-top: 1px solid var(--border);
+    }
+    .section-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .problem__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 16px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .problem__card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 34px 30px;
+      position: relative;
+      transition: border-color 0.3s ease;
+    }
+    .problem__card:hover { border-color: var(--accent-line); }
+    .problem__plus {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+    .problem__card h3 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--text);
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+    .problem__card p {
+      font-size: 0.88rem;
+      color: var(--text-2);
+      line-height: 1.68;
+      font-weight: 300;
+    }
+    #solution {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .solution__intro {
+      max-width: 700px;
+      margin: 0 auto 60px;
+      text-align: center;
+    }
+    .solution__intro p {
+      font-size: 1.05rem;
+      color: var(--text-2);
+      font-weight: 300;
+      line-height: 1.8;
+      margin-top: 20px;
+    }
+    .solution__steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      max-width: 900px;
+      margin: 0 auto;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+    }
+    .step {
+      background: var(--surface-2);
+      padding: 44px 32px;
+      text-align: center;
+      border-right: 1px solid var(--border);
+      position: relative;
+    }
+    .step:last-child { border-right: none; }
+    @media (max-width: 720px) {
+      .step { border-right: none; border-bottom: 1px solid var(--border); }
+      .step:last-child { border-bottom: none; }
+    }
+    .step__num {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 3.2rem;
+      color: var(--accent);
+      opacity: 0.18;
+      line-height: 1;
+      margin-bottom: 18px;
+    }
+    .step__title {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--text);
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+    .step__text {
+      font-size: 0.85rem;
+      color: var(--text-2);
+      line-height: 1.65;
+      font-weight: 300;
+    }
+
+    /* ─── PROOF BAR ─── */
+    .proofbar {
+      padding: 56px 0;
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      text-align: center;
+    }
+    .proofbar__inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+    .proofbar__stat { flex: 1 1 240px; }
+    .proofbar__num {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: clamp(2.4rem, 6vw, 3.6rem);
+      color: var(--accent);
+      letter-spacing: -0.03em;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .proofbar__label {
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-2);
+    }
+    .proofbar__divider {
+      width: 1px;
+      height: 64px;
+      background: var(--border);
+    }
+    .proofbar__note {
+      margin-top: 22px;
+      font-size: 0.75rem;
+      color: var(--text-3);
+    }
+    @media (max-width: 640px) {
+      .proofbar__divider { display: none; }
+    }
+
+    #results { border-top: 1px solid var(--border); }
+    .results__stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 980px;
+      margin: 0 auto 60px;
+    }
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 52px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.3s ease, transform 0.3s ease;
+    }
+    .stat-card:hover {
+      border-color: var(--accent-line);
+      transform: translateY(-4px);
+    }
+    .stat-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent 0%, var(--accent) 50%, transparent 100%);
+    }
+    .stat-card::after {
+      content: '';
+      position: absolute;
+      top: -40px; left: 50%;
+      transform: translateX(-50%);
+      width: 200px; height: 120px;
+      background: radial-gradient(ellipse, rgba(74,158,255,0.10) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .stat__spend {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-3);
+      margin-bottom: 10px;
+      position: relative;
+    }
+    .stat__spend strong { color: var(--text-2); }
+    .stat__arrow {
+      font-size: 1.2rem;
+      color: var(--text-3);
+      margin: 6px 0 10px;
+      position: relative;
+    }
+    .stat__revenue {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: clamp(2.8rem, 6vw, 4rem);
+      color: var(--accent);
+      letter-spacing: -0.03em;
+      line-height: 1;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    .stat__label {
+      font-size: 0.85rem;
+      color: var(--text-2);
+      line-height: 1.6;
+      font-weight: 300;
+      position: relative;
+    }
+    .results__screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      max-width: 980px;
+      margin: 0 auto;
+    }
+    .screenshot-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      position: relative;
+      transition: border-color 0.3s ease, transform 0.35s cubic-bezier(0.16,1,0.3,1), box-shadow 0.35s ease;
+    }
+    .screenshot-card:hover {
+      border-color: var(--accent-line);
+      transform: translateY(-5px);
+      box-shadow: 0 24px 64px rgba(0,0,0,0.45), 0 0 40px rgba(74,158,255,0.07);
+    }
+    .screenshot-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .screenshot-caption {
+      padding: 14px 18px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      color: var(--text-3);
+      border-top: 1px solid var(--border-2);
+      background: var(--surface-2);
+    }
+    .screenshot-caption strong { color: var(--accent); font-weight: 600; }
+    #why {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .why__list {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .why__item {
+      display: flex;
+      gap: 24px;
+      padding: 36px 0;
+      border-bottom: 1px solid var(--border-2);
+    }
+    .why__item:last-child { border-bottom: none; }
+    .why__plus {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.4rem;
+      color: var(--accent);
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .why__content h3 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--text);
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    .why__content p {
+      font-size: 0.88rem;
+      color: var(--text-2);
+      line-height: 1.7;
+      font-weight: 300;
+    }
+    #form { padding-top: 64px; padding-bottom: 72px; }
+    .form__restate {
+      text-align: center;
+      max-width: 560px;
+      margin: 0 auto 32px;
+    }
+    .form__guarantee-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent-dim);
+      border: 1px solid var(--accent-line);
+      border-radius: 100px;
+      padding: 7px 18px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 18px;
+    }
+    .form__guarantee-badge::before {
+      content: '✦';
+      font-size: 0.6rem;
+      opacity: 0.7;
+    }
+    .form__header {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: clamp(1.7rem, 4vw, 2.4rem);
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+      color: var(--text);
+      margin-bottom: 10px;
+    }
+    .form__sub {
+      font-size: 0.92rem;
+      color: var(--text-2);
+      font-weight: 300;
+      line-height: 1.7;
+    }
+    .form__embed-wrap {
+      max-width: 620px;
+      margin: 0 auto;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow:
+        0 28px 72px rgba(0,0,0,0.45),
+        0 0 48px rgba(74,158,255,0.035);
+    }
+    .form__embed-wrap iframe {
+      display: block;
+      width: 100%;
+      min-height: 1545px;
+      border: none;
+    }
+    @media (max-width: 768px) {
+      #form { padding-top: 48px; padding-bottom: 56px; }
+      .form__restate { margin-bottom: 24px; }
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 44px 24px;
+      text-align: center;
+    }
+    .footer__brand {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: var(--text);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .footer__brand .plus { color: var(--accent); }
+    .footer__tagline {
+      font-size: 0.82rem;
+      color: var(--text-3);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ════════════════════════════
+       SECTION 1 — HERO
+  ════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-in">
+      <div class="hero__badge">Meta Ads — Junk Removal Companies</div>
+    </div>
+
+    <h1 class="hero__headline hero-in">
+      We Get Junk Removal Companies <span class="accent">Booked Jobs</span> — On Autopilot
+    </h1>
+
+    <p class="hero__sub hero-in">
+      Done-for-you Meta ad campaigns plus automated lead follow-up — built for junk removal operators who want real, exclusive leads.
+    </p>
+
+    <div class="hero__cta hero-in">
+      <a href="#vsl" class="btn btn--lg">Watch How It Works ↓</a>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════
+       SECTION 2 — VSL
+  ════════════════════════════ -->
+  <section id="vsl">
+    <div class="container--mid">
+      <p class="vsl__label reveal">Watch This First 👇</p>
+
+      <div class="vsl__wrap reveal reveal-delay-1">
+        <div class="vsl__ratio">
+          <iframe
+            src="https://www.loom.com/embed/f109f79580a042199d0ce2428ba932b5"
+            frameborder="0"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen
+            loading="lazy"
+            title="Resurrect Media — How It Works">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="vsl__cta reveal reveal-delay-2">
+        <a href="#form" class="btn">Book Your Call →</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════
+       SECTION 3 — THE OFFER
+  ════════════════════════════ -->
+  <section id="offer">
+    <div class="container">
+      <div class="offer__box reveal">
+        <div class="offer__glow"></div>
+        <div class="eyebrow" style="justify-content: center;">The Guarantee</div>
+        <h2 class="offer__headline">
+          10 Qualified Leads in Your First 30 Days —<br>Or Next Month Is Free.
+        </h2>
+        <p class="offer__sub">
+          I run your ads AND handle every lead automatically. You just show up to real, booked jobs. If I don't hit it, I keep working until you do — on me.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════
+       SECTION 4 — THE PROBLEM
+  ════════════════════════════ -->
+  <section id="problem">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">The Problem</div>
+        <h2 class="section-title reveal">
+          Why Most Junk Removal Companies<br>Struggle to Stay Booked
+        </h2>
+      </div>
+
+      <div class="problem__grid">
+        <div class="problem__card reveal reveal-delay-1">
+          <div class="problem__plus">+</div>
+          <h3>Word of mouth is unpredictable</h3>
+          <p>Slammed one week, dead the next. You can't scale a real business on referrals alone — you need a consistent, controllable pipeline.</p>
+        </div>
+        <div class="problem__card reveal reveal-delay-2">
+          <div class="problem__plus">+</div>
+          <h3>Shared leads are a race to the bottom</h3>
+          <p>Lead services sell the same lead to five companies. You're competing on price with four other guys before you even say hello.</p>
+        </div>
+        <div class="problem__card reveal reveal-delay-3">
+          <div class="problem__plus">+</div>
+          <h3>Speed wins — and you're losing it</h3>
+          <p>Chasing leads yourself means by the time you reply, they've already booked someone else. The first to respond gets the job. Every time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════
+       SECTION 5 — THE SOLUTION
+  ════════════════════════════ -->
+  <section id="solution">
+    <div class="container">
+      <div class="solution__intro reveal">
+        <div class="eyebrow">How We Fix That</div>
+        <h2 class="section-title">Here's How We Fix That</h2>
+        <p>
+          We build and run your Facebook & Instagram ads so qualified leads come in consistently — only to you. The second a lead comes in, our system automatically texts them, qualifies the job, and books it — or sends you their number to call right away. No chasing. No tire-kickers. You just show up to real jobs.
+        </p>
+      </div>
+
+      <div class="solution__steps">
+        <div class="step reveal reveal-delay-1">
+          <div class="step__num">01</div>
+          <div class="step__title">We Launch Your Ads</div>
+          <p class="step__text">Qualified leads come in exclusively to you — not shared, not recycled.</p>
+        </div>
+        <div class="step reveal reveal-delay-2">
+          <div class="step__num">02</div>
+          <div class="step__title">Our System Texts & Qualifies Instantly</div>
+          <p class="step__text">Automated follow-up fires within seconds, 24/7. Every lead gets responded to.</p>
+        </div>
+        <div class="step reveal reveal-delay-3">
+          <div class="step__num">03</div>
+          <div class="step__title">You Show Up to Booked Jobs</div>
+          <p class="step__text">No chasing, no tire-kickers. Real jobs on your calendar, ready to go.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════
+       PROOF BAR
+  ════════════════════════════ -->
+  <div class="proofbar">
+    <div class="proofbar__inner reveal">
+      <div class="proofbar__stat">
+        <div class="proofbar__num">$44K+</div>
+        <div class="proofbar__label">Client-Reported Revenue</div>
+      </div>
+      <div class="proofbar__divider"></div>
+      <div class="proofbar__stat">
+        <div class="proofbar__num">&lt;$5K</div>
+        <div class="proofbar__label">Total Ad Spend</div>
+      </div>
+    </div>
+    <p class="proofbar__note">Across junk removal clients. Revenue figures reported by clients.</p>
+  </div>
+
+  <!-- ════════════════════════════
+       SECTION 6 — RESULTS
+  ════════════════════════════ -->
+  <section id="results">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Proof It Works</div>
+        <h2 class="section-title reveal">Real Results</h2>
+      </div>
+
+      <!-- Stat Cards -->
+      <div class="results__stats">
+        <div class="stat-card reveal reveal-delay-1">
+          <div class="stat__spend">Ad spend: <strong>$50</strong></div>
+          <div class="stat__arrow">↓</div>
+          <div class="stat__revenue">$1,400</div>
+          <div class="stat__label">
+            In booked jobs — first week<br>
+            Long Island junk removal company
+          </div>
+        </div>
+        <div class="stat-card reveal reveal-delay-2">
+          <div class="stat__spend">Ad spend: <strong>$700</strong></div>
+          <div class="stat__arrow">↓</div>
+          <div class="stat__revenue">$10,000+</div>
+          <div class="stat__label">
+            In booked jobs — first full month<br>
+            Over 10× return on ad spend
+          </div>
+        </div>
+      </div>
+
+      <!-- Real proof screenshots -->
+      <div class="results__screenshots">
+
+        <!-- Thomas testimonial -->
+        <div class="screenshot-card reveal reveal-delay-1">
+          <img src="img/WhatsApp%20Image%202026-06-28%20at%205.42.40%20PM.jpeg" alt="Client confirming $10–14k in booked jobs">
+          <div class="screenshot-caption">Client text — <strong>$10–14k booked</strong> since running ads</div>
+        </div>
+
+        <!-- Sharif testimonial -->
+        <div class="screenshot-card reveal reveal-delay-2">
+          <img src="img/IMG_3870.jpg" alt="Client confirming $14k in closed jobs on less than $900 ad spend">
+          <div class="screenshot-caption">Client text — <strong>$14k closed</strong> on less than $900 in ad spend</div>
+        </div>
+
+        <!-- Grant testimonial -->
+        <div class="screenshot-card reveal reveal-delay-3">
+          <img src="img/IMG_3779.PNG" alt="Client booking back-to-back jobs after new leads">
+          <div class="screenshot-caption">Client text — <strong>Booking back to back</strong> · 3 jobs locked in next week</div>
+        </div>
+
+        <!-- Campaign 1 -->
+        <div class="screenshot-card reveal reveal-delay-4">
+          <img src="img/WhatsApp%20Image%202026-06-28%20at%205.42.40%20PM%20%281%29.jpeg" alt="Facebook Ads campaign results — 65 leads">
+          <div class="screenshot-caption">Campaign — 65 leads · <strong>$10.16 CPL</strong> · $660 spend</div>
+        </div>
+
+        <!-- Campaign 2 -->
+        <div class="screenshot-card reveal reveal-delay-4">
+          <img src="img/WhatsApp%20Image%202026-06-28%20at%205.42.40%20PM%20%282%29.jpeg" alt="Facebook Ads campaign results — 20 leads">
+          <div class="screenshot-caption">Campaign — 20 leads · <strong>$8.08 CPL</strong> · $161 spend</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════
+       SECTION 7 — WHY US
+  ════════════════════════════ -->
+  <section id="why">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Why Work With Me</div>
+        <h2 class="section-title reveal">Built Different</h2>
+      </div>
+
+      <div class="why__list">
+        <div class="why__item reveal">
+          <div class="why__plus">+</div>
+          <div class="why__content">
+            <h3>Built for junk removal companies</h3>
+            <p>This is what I do — junk removal operators, specifically. I'm not managing ads for dentists, gyms, or restaurants on the side. My systems, my copy, and my strategy are dialed in for your industry, not a generic playbook.</p>
+          </div>
+        </div>
+        <div class="why__item reveal reveal-delay-1">
+          <div class="why__plus">+</div>
+          <div class="why__content">
+            <h3>Founded by an actual operator</h3>
+            <p>I've run a junk removal business myself. I know job sizes, seasonality, what customers actually care about, and what makes a lead worth chasing. That knowledge is baked into everything I build for you.</p>
+          </div>
+        </div>
+        <div class="why__item reveal reveal-delay-2">
+          <div class="why__plus">+</div>
+          <div class="why__content">
+            <h3>Small roster — real attention</h3>
+            <p>I only take a few clients at a time so everyone gets real, hands-on work. You're not account #47 buried in a stack. When something changes in your market, I notice and I act on it fast.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════
+       SECTION 8 — FORM
+  ════════════════════════════ -->
+  <section id="form">
+    <div class="container">
+      <div class="form__restate reveal">
+        <div class="form__guarantee-badge">10 qualified leads in 30 days — or next month free</div>
+        <h2 class="form__header">Let's See If We're a Fit</h2>
+        <p class="form__sub">Answer a few quick questions and book your strategy call. I only take clients I know I can get results for.</p>
+      </div>
+
+      <div class="form__embed-wrap">
+        <iframe
+          src="https://api.leadconnectorhq.com/widget/form/JCwgDuUkCbmDghh3ULQa"
+          id="inline-JCwgDuUkCbmDghh3ULQa"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="Resurrect Media VSL landing form junk removal"
+          data-height="1545"
+          data-layout-iframe-id="inline-JCwgDuUkCbmDghh3ULQa"
+          data-form-id="JCwgDuUkCbmDghh3ULQa"
+          data-cookie-consent="true"
+          data-cookie-consent-provider="auto"
+          title="Resurrect Media VSL landing form junk removal">
+        </iframe>
+      </div>
+      <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════
+       FOOTER
+  ════════════════════════════ -->
+  <footer>
+    <div class="footer__brand">
+      Resurrect Media <span class="plus">+</span>
+    </div>
+    <p class="footer__tagline">Meta ads &amp; automation for junk removal companies.</p>
+  </footer>
+
+
+  <!-- ════════════════════════════
+       SCRIPTS
+  ════════════════════════════ -->
+  <script>
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -48px 0px' }
+    );
+
+    document.querySelectorAll('.reveal').forEach((el) => {
+      revealObserver.observe(el);
+    });
+  </script>
+
+</body>
+</html>
