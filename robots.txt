@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# AI / answer engine crawlers — explicitly allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Keep the booking calendar out of search/AI indexing
+Disallow: /book
+
+Sitemap: https://www.resurrectmediaagency.com/sitemap.xml
