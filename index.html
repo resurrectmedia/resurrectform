@@ -1358,27 +1358,30 @@ window.addEventListener('message', function(e) {
         <p class="form__sub">Answer a few quick questions and book your strategy call. I only take clients I know I can get results for.</p>
       </div>
 
-      <div class="form__embed-wrap">
-        <iframe
-          src="https://api.leadconnectorhq.com/widget/form/eoSc5sMjzTTFKs3wAqlC"
-          id="inline-eoSc5sMjzTTFKs3wAqlC"
-          data-layout="{'id':'INLINE'}"
-          data-trigger-type="alwaysShow"
-          data-trigger-value=""
-          data-activation-type="alwaysActivated"
-          data-activation-value=""
-          data-deactivation-type="neverDeactivate"
-          data-deactivation-value=""
-          data-form-name="Resurrect Media VSL landing form epoxy"
-          data-height="1475"
-          data-layout-iframe-id="inline-eoSc5sMjzTTFKs3wAqlC"
-          data-form-id="eoSc5sMjzTTFKs3wAqlC"
-          data-cookie-consent="true"
-          data-cookie-consent-provider="auto"
-          title="Resurrect Media VSL landing form epoxy">
-        </iframe>
-      </div>
-      <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+      <div class="form__embed-wrap" id="ghlFormWrap" style="min-height: 1475px;"></div>
+      <script>
+        (function() {
+          var formHTML = '<iframe src="https://api.leadconnectorhq.com/widget/form/eoSc5sMjzTTFKs3wAqlC" id="inline-eoSc5sMjzTTFKs3wAqlC" style="width:100%;min-height:1475px;border:none;display:block;" data-layout="{\'id\':\'INLINE\'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Resurrect Media VSL landing form epoxy" data-height="1475" data-layout-iframe-id="inline-eoSc5sMjzTTFKs3wAqlC" data-form-id="eoSc5sMjzTTFKs3wAqlC" data-cookie-consent="true" data-cookie-consent-provider="auto" title="Resurrect Media VSL landing form epoxy"></iframe>';
+          var formLoaded = false;
+          function loadForm() {
+            if (formLoaded) return;
+            formLoaded = true;
+            document.getElementById('ghlFormWrap').innerHTML = formHTML;
+            var s = document.createElement('script');
+            s.src = 'https://link.msgsndr.com/js/form_embed.js';
+            document.body.appendChild(s);
+          }
+          var formObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+              if (entry.isIntersecting) {
+                loadForm();
+                formObserver.disconnect();
+              }
+            });
+          }, { rootMargin: '400px 0px' });
+          formObserver.observe(document.getElementById('ghlFormWrap'));
+        })();
+      </script>
     </div>
   </section>
 
