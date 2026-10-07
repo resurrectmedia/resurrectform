@@ -109,7 +109,7 @@ window.addEventListener('message', function(e) {
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -324,12 +324,38 @@ window.addEventListener('message', function(e) {
       position: relative;
       padding-bottom: 56.25%;
       height: 0;
+      cursor: pointer;
+      background: var(--surface-2);
     }
     .vsl__ratio iframe {
       position: absolute;
       top: 0; left: 0;
       width: 100%; height: 100%;
     }
+    .vsl__poster {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+    .vsl__playbtn {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 64px; height: 64px;
+      background: rgba(0,0,0,0.55);
+      border: 2px solid rgba(255,255,255,0.8);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+    .vsl__ratio:hover .vsl__playbtn {
+      transform: translate(-50%, -50%) scale(1.08);
+      background: var(--accent);
+    }
+    .vsl__playbtn svg { margin-left: 3px; }
     .vsl__cta { text-align: center; margin-top: 40px; }
     #offer { padding: 80px 0; }
     .offer__box {
@@ -1004,18 +1030,21 @@ window.addEventListener('message', function(e) {
       <p class="vsl__label reveal">Watch This First 👇</p>
 
       <div class="vsl__wrap reveal reveal-delay-1">
-        <div class="vsl__ratio">
-          <iframe
-            src="https://www.loom.com/embed/c02f7d0ef7d34489a296d7aa7e6370ba"
-            frameborder="0"
-            webkitallowfullscreen
-            mozallowfullscreen
-            allowfullscreen
-            loading="lazy"
-            title="Resurrect Media — How It Works">
-          </iframe>
+        <div class="vsl__ratio" id="vslPlayer" data-loom-id="c02f7d0ef7d34489a296d7aa7e6370ba" onclick="loadVSL(this)">
+          <img src="https://cdn.loom.com/sessions/thumbnails/c02f7d0ef7d34489a296d7aa7e6370ba-with-play.gif" alt="Watch: How Resurrect Media Works" class="vsl__poster" loading="eager">
+          <div class="vsl__playbtn" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+          </div>
         </div>
       </div>
+      <script>
+        function loadVSL(el) {
+          var id = el.getAttribute('data-loom-id');
+          el.innerHTML = '<iframe src="https://www.loom.com/embed/' + id + '?autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen title="Resurrect Media — How It Works" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>';
+          el.onclick = null;
+          el.style.cursor = 'default';
+        }
+      </script>
 
       <div class="vsl__cta reveal reveal-delay-2">
         <a href="#form" class="btn">Book Your Call →</a>
